@@ -72,5 +72,8 @@ function playSound(key) {
 }
 
 
+// **** Function to add on ***
+// 1. apply box-shadow on keypress
+
 
 

@@ -36,7 +36,7 @@ header{
 .btn{
     width: 150px;
     height: 150px;
-    margin: 10px;
+    margin: 15px;
     border: 4px #090909 solid;
     border-radius: 50%;
     font-size: 3rem;
@@ -46,10 +46,35 @@ header{
     box-shadow: inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c;
 }
 
+#instruction {
+    margin: 20px auto 0 auto;
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    color: wheat;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+#instruction .card {
+    background: linear-gradient(145deg, #171717, #444245);
+    box-shadow: inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c;
+}
+
+.btn:active {
+    background: linear-gradient(145deg, #171717, #444245);
+    box-shadow: inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c;
+}
 @media (max-width: 835px) {
     .btn {
         width: 120px;
         height: 120px;
+    }
+
+    #instruction {
+        font-size: 1.5rem;
     }
 }
 
@@ -62,18 +87,14 @@ header{
         width: 80px;
         height: 80px;
     }
-
 }
 
-
-
+@media (max-width: 460px) {
+    #instruction {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 .btn:hover {
     box-shadow: 5px 5px 5px -1px rgba(10, 99, 169, 0.16),inset -5px -5px 5px -1px rgba(255, 255, 255, 0.60);
 }
 
-#instruction {
-    margin-top: 10px;
-    text-align: center;
-    font-size: 1.3rem;
-    color: wheat;
-}
