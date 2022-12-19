@@ -63,10 +63,6 @@ header{
     box-shadow: inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c;
 }
 
-.btn:active {
-    background: linear-gradient(145deg, #171717, #444245);
-    box-shadow: inset 2px 2px 0px #7d7c7e, inset -2px -2px 0px #1c1c1c;
-}
 @media (max-width: 835px) {
     .btn {
         width: 120px;
